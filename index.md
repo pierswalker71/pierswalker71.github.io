@@ -47,7 +47,7 @@ Projects are presented with an emphasis on:
 - usability and stakeholder considerations
 - outcomes, insights or lessons learned
 
-[View selected projects](/projects)
+[View selected projects →](https://pierswalker71.github.io/projects)
 
 ---
 
