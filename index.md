@@ -14,7 +14,7 @@ The emphasis is not on isolated tools or coding exercises. It is on analytical a
 
 It treats analytics and AI as components within wider systems that must support real users, fit real workflows, and perform reliably in practice.
 
-[Read more about Systems Data Science](systems-data-science.md)
+[Coming soon...Read more about Systems Data Science](systems-data-science.md)
 
 ---
 
@@ -47,7 +47,7 @@ Projects are presented with an emphasis on:
 - usability and stakeholder considerations
 - outcomes, insights or lessons learned
 
-[View projects](https://pierswalker71.github.io/projects)
+[View selected projects](/projects)
 
 ---
 
@@ -56,7 +56,7 @@ Selected technical notes, short written pieces and references to conference pres
 
 These are intended to show how I think about systems, analytics, AI-enabled tools, workflow integration and practical performance in real settings.
 
-[Technical notes and presentations](technical-notes.md)
+[Coming soon...Read about technical notes and ideas](technical-notes.md)
 
 ---
 
@@ -66,4 +66,4 @@ Repositories and materials which reflect earlier exploratory work and technical 
 
 They are retained as historical context, illustrating how technical interests and methods have evolved over time, particularly in areas such as machine learning.
 
-[Archive / exploratory work](archive.md)
+[Coming soon...Archive / exploratory work](archive.md)
