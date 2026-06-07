@@ -6,8 +6,10 @@ The emphasis is on useful, credible work shaped by real workflows, organisationa
 The aim is not to present isolated code samples. It is to show how analytical and AI-enabled approaches can be embedded into systems that people can use, trust and understand.
 
 ## School Allocation Tool
-
-![Map preview of the school allocation tool](https://github.com/pierswalker71/datascience_experiments/blob/main/schools/images/school_allocation_map.png)  
+<img src="[/images/school-allocation-preview.pn](https://github.com/pierswalker71/datascience_experiments/blob/main/schools/images/school_allocation_map.png)g"
+     alt="Map preview of the school allocation tool"
+     width="420">
+     
 An interactive app designed to help local authorities create fair, geographically coherent and defensible school allocation groups.
 
 The tool combines school-level data with official location information and generates proposed groups that balance school counts, pupil numbers and geographic practicality. Users can adjust assumptions, review summary metrics and inspect the proposed allocation on an interactive map.
