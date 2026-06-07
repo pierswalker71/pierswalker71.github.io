@@ -4,7 +4,7 @@
 
 Local authorities often need to divide schools between members of staff, advisers, officers or service teams. These allocations need to be fair, geographically sensible and easy to explain.
 
-This project is an interactive decision-support tool that helps local authority teams create and review school groupings using school location, pupil numbers and group balance metrics.
+This project is an interactive decision-support tool that could help local authority teams create and review school groupings using school location, pupil numbers and group balance metrics.
 
 It was built as a rapid prototype in approximately 24 hours to show how quickly a useful operational planning tool can be created when the problem is clearly understood.
 
