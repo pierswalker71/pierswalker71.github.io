@@ -24,6 +24,7 @@ It is designed as a decision-support aid to give officers a useful starting poin
 **Tags:** `Decision support` `Local Authority` `Operational planning` `Marimo app`
 
 
-[Read project case study](school-allocation-tool.md)  
+[**Read project case study →**](https://pierswalker71.github.io/school-allocation-tool)  
+
 [View project repository](https://github.com/pierswalker71/datascience_experiments/tree/main/schools)  
 
