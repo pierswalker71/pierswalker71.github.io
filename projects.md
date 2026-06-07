@@ -14,7 +14,7 @@ An interactive app designed to help local authorities create fair, geographicall
 
 The tool combines school-level data with official location information and generates proposed groups that balance school counts, pupil numbers and geographic practicality. Users can adjust assumptions, review summary metrics and inspect the proposed allocation on an interactive map.
 
-It is deliberately designed as a transparent decision-support tool rather than a black-box model. The aim is to give officers and managers a useful starting point for scenario planning, discussion and refinement.
+It is designed as a decision-support aid to give officers a useful starting point for scenario planning, discussion and refinement.
 
 **Domain:** Local government, education  
 **Problem type:** Operational allocation, decision support  
