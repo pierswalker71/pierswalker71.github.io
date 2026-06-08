@@ -197,7 +197,9 @@ The strongest feature of this project is its practicality. In a short developmen
 
 ---
 
-[View the project repository](https://github.com/pierswalker71/datascience_experiments/tree/main/schools)  
+[View the project repository](https://github.com/pierswalker71/datascience_experiments/tree/main/schools) 
+
+---
 
 **←[Back to selected projects](/projects)**
 
