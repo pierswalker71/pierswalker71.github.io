@@ -376,3 +376,7 @@ This project demonstrates a simulation optimisation workflow in Python.
 It shows how a business simulator can be treated as a black box, approximated using machine learning, and then optimised to find low-cost input configurations that achieve a target output.
 
 The result is a practical prototype for cost-aware operational decision support.
+
+---
+
+**←[Back to selected projects](https://pierswalker71.github.io/projects)**
