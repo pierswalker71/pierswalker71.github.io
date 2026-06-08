@@ -5,6 +5,8 @@ The emphasis is on useful, credible work shaped by real workflows, organisationa
 
 The aim is not to present isolated code samples. It is to show how analytical and AI-enabled approaches can be embedded into systems that people can use, trust and understand.
 
+---
+
 ## School Allocation Tool
 <img src="https://raw.githubusercontent.com/pierswalker71/datascience_experiments/main/schools/images/school_allocation_map.png"
      alt="Map preview of the school allocation tool"
@@ -28,6 +30,7 @@ It is designed as a decision-support aid to give officers a useful starting poin
 
 [View project repository](https://github.com/pierswalker71/datascience_experiments/tree/main/schools)  
 
+---
 
 ## Simulation Optimisation
 
