@@ -24,7 +24,7 @@ It is designed as a decision-support aid to give officers a useful starting poin
 **Tags:** `Decision support` `Local Authority` `Operational planning` `Marimo app`
 
 
-[**Read project case study →**](https://pierswalker71.github.io/school_allocation)  
+👉[**Read project case study**](https://pierswalker71.github.io/school_allocation)  
 
 [View project repository](https://github.com/pierswalker71/datascience_experiments/tree/main/schools)  
 
@@ -41,14 +41,14 @@ The project treats a simulator as a black box, generates data from a range of in
 
 It demonstrates how an organisation could move beyond manually testing individual scenarios towards a more systematic approach for resource planning, cost reduction and operational decision-making.
 
-**Domain:** Operations, resource planning, simulation modelling
-**Problem type:** Simulation optimisation, cost-aware decision support
-**Users:** Analysts, operational planners, service managers, decision-makers
-**Methods:** Simulation, surrogate modelling, regression, global optimisation, scenario testing
+**Domain:** Operations, resource planning, simulation modelling  
+**Problem type:** Simulation optimisation, cost-aware decision support  
+**Users:** Analysts, operational planners, service managers, decision-makers  
+**Methods:** Simulation, surrogate modelling, regression, global optimisation, scenario testing  
 
 **Tags:** `Decision support` `Simulation optimisation` `Surrogate modelling` `Operational planning` `Python`
 
-[**Read project case study →**](https://pierswalker71.github.io/Simulator_optimisation)
+👉[**Read project case study**](https://pierswalker71.github.io/simulator_optimisation)
 
 [View project repository](https://github.com/pierswalker71/Simulation_Optimisation)
 
