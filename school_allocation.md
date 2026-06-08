@@ -200,12 +200,9 @@ The strongest feature of this project is its practicality. In a short developmen
 ---
 ## Repository
 
-The main file is available in the GitHub repository:
-
-[View the project repository](https://github.com/pierswalker71/datascience_experiments/tree/main/schools) 
+The code is available in the GitHub repository: [View the project repository](https://github.com/pierswalker71/datascience_experiments/tree/main/schools) 
 
 Main file:
-
 ```text
 app.py
 ```
