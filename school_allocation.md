@@ -195,9 +195,28 @@ It shows that data science is not only about building predictive models. It is a
 
 The strongest feature of this project is its practicality. In a short development window, it turns a complex manual allocation task into an interactive tool that supports scenario planning, transparency and management review.
 
+
+
 ---
+## Repository
+
+The main file is available in the GitHub repository:
 
 [View the project repository](https://github.com/pierswalker71/datascience_experiments/tree/main/schools) 
+
+Main file:
+
+```text
+app.py
+```
+
+---
+
+## Summary
+
+This project shows how a simple, transparent data tool can support a real operational decision. By combining school roll data with official location information, the app helps local authority teams create school groups that are fairer, geographically sensible and easier to review.
+
+The value of the project is not in complex modelling, but in turning a practical planning problem into a usable decision-support workflow. It demonstrates how data science can help organisations make clearer, better-evidenced decisions quickly and pragmatically.
 
 ---
 
