@@ -10,11 +10,13 @@ The emphasis is not on isolated tools or coding exercises. It is on analytical a
 
 ## Systems Data Science
 
-**Systems Data Science** combines systems engineering and applied data science to deliver usable, measurable, and operationally effective solutions.
+**Systems Data Science** combines systems thinking, systems engineering and applied data science to develop useful, responsible and operationally effective solutions.
 
-It treats analytics and AI as components within wider systems that must support real users, fit real workflows, and perform reliably in practice.
+It treats analytics and AI as components within wider systems of people, processes, information, technology and governance. The focus is not only on technical performance, but on whether solutions meet real user needs, fit operational workflows, manage risk and deliver meaningful outcomes.
 
-[Coming soon...Read more about Systems Data Science](systems-data-science.md)
+
+
+### 👉 **[Paper on Systems Data Science](https://pierswalker71.github.io/systems_data_science)**
 
 ---
 
@@ -47,7 +49,7 @@ Projects are presented with an emphasis on:
 - usability and stakeholder considerations
 - outcomes, insights or lessons learned
 
-👉 **[View selected projects](https://pierswalker71.github.io/projects)**
+### 👉 **[View selected projects](https://pierswalker71.github.io/projects)**
 
 ---
 
