@@ -533,3 +533,5 @@ Systems thinking does not replace technical excellence in data science; it gives
 
 The aim of Systems Data Science is to build analytical and AI-enabled solutions that are not only technically capable, but useful, usable, measurable, responsible and operationally effective.
 
+---
+**←[Back to home page](https://pierswalker71.github.io)**
