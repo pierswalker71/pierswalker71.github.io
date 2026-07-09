@@ -26,7 +26,7 @@ It is designed as a decision-support aid to give officers a useful starting poin
 **Tags:** `Decision support` `Local Authority` `Operational planning` `Marimo app`
 
 
-👉[**Read project case study**](https://pierswalker71.github.io/school_allocation)  
+### 👉[**Read project case study**](https://pierswalker71.github.io/school_allocation)  
 
 [View project repository](https://github.com/pierswalker71/datascience_experiments/tree/main/schools)  
 
@@ -51,7 +51,7 @@ It demonstrates how an organisation could move beyond manually testing individua
 
 **Tags:** `Decision support` `Simulation optimisation` `Surrogate modelling` `Operational planning` `Python`
 
-👉[**Read project case study**](https://pierswalker71.github.io/simulator_optimisation)
+### 👉[**Read project case study**](https://pierswalker71.github.io/simulator_optimisation)
 
 [View project repository](https://github.com/pierswalker71/Simulation_Optimisation)
 
