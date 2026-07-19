@@ -181,10 +181,13 @@ A systems-thinking approach changes the questions we ask.
 
 ## Case study: applying Systems Data Science to an internal AI chatbot
 <details>
-  <summary><mark>Case study: applying Systems Data Science to an internal AI chatbot</mark></summary>
+  <summary>Expand to view case study of applying Systems Data Science to an internal AI chatbot</summary>
 
 
-### Introduction
+
+
+
+
 Consider an internal chatbot that uses Retrieval Augmented Generation (RAG) to help staff find and understand HR policies and guidance from an organisation's intranet.
 
 This provides a useful example of Systems Data Science because the technical AI system is only one part of the intervention. Success also depends on content quality, user behaviour, workflow integration, trust, governance, feedback and operational support.
