@@ -182,7 +182,7 @@ A systems-thinking approach changes the questions we ask.
 ## Case study: applying Systems Data Science to an internal AI chatbot
 
 <details>
-  <summary>Expand to view case study of applying Systems Data Science to an internal AI chatbot</summary>
+  <summary><mark>Expand to view case study of applying Systems Data Science to an internal AI chatbot</mark></summary>
 
   <h3>Introduction</h3>
 
