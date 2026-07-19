@@ -179,8 +179,14 @@ A systems-thinking approach changes the questions we ask.
 | **Outcomes**                | What outcomes should improve, and how will we know?<br>Are we measuring model performance, user experience or organisational effect?<br>Over what period should benefits and harms be assessed?             |
 | **Unintended consequences** | Could the tool create incentives for unhelpful behaviour?<br>Could it move work, risk or responsibility onto another part of the organisation?<br>What might happen if people over-trust or under-trust it? |
 
-
 ## Case study: applying Systems Data Science to an internal AI chatbot
+<details>
+  <summary>Expand to view case study of applying Systems Data Science to an internal AI chatbot</summary>
+
+
+
+
+
 
 Consider an internal chatbot that uses Retrieval Augmented Generation (RAG) to help staff find and understand HR policies and guidance from an organisation's intranet.
 
@@ -257,7 +263,7 @@ For this reason, evaluation should consider not only technical performance, but 
 
 ### Looking upstream for causes
 
-When a user reports a poor answer, it can be tempting to treat the problem as a failure of the model.
+When a user reports a poor answer, it can be tempting to treat the problem as a failure simply of the AI model.
 
 A systems perspective encourages us to trace the problem upstream. The same visible symptom can have several possible causes in different parts of the system.
 
@@ -302,6 +308,8 @@ A Systems Data Science approach therefore also considers questions such as:
 * What happens when user behaviour or the wider organisation changes?
 
 Operational effectiveness depends not only on average model performance, but on whether the complete system can be monitored, maintained and trusted in real use.
+
+</details>
 
 ## Responsible and safe AI
 
