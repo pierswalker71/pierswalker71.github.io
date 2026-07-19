@@ -72,13 +72,10 @@ Some useful concepts include:
 * **Time delays** – gaps between an action and its effects
 * **Emergence** – behaviour or properties that arise from interactions across the system rather than from any individual component
 
-Feedback loops are particularly important.
+**Feedback loops** are particularly important.
+A reinforcing loop amplifies change. This can produce either beneficial or harmful effects. A balancing loop acts to resist change or move the system towards a particular state or target.
 
-A **reinforcing loop** amplifies change. This can produce either beneficial or harmful effects.
-
-A **balancing loop** acts to resist change or move the system towards a particular state or target.
-
-Time delays are also important because they can make systems difficult to manage. The consequences of an action may only become visible weeks, months or years later, by which point the original cause may no longer be obvious.
+**Time delays** are also important because they can make systems difficult to manage. The consequences of an action may only become visible weeks, months or years later, by which point the original cause may no longer be obvious.
 
 Here is an illustration of some of these components:
 
@@ -118,8 +115,6 @@ Other important considerations include resources, constraints and the wider syst
 | Resources and constraints | beds, medicines, equipment, staff time, funding, physical space, theatre capacity               |
 | Wider system              | GPs, ambulance services, community care, social care, public health, regulation, patient demand |
 
-### Admissions process
-
 Here is a simplified illustration of an admissions process:
 
 ![Hospital diagram](2026-07-08_hospital_system.svg)
@@ -148,19 +143,10 @@ The distinction is useful: systems thinking helps us understand the problem land
 
 Systems Data Science applies analytical and AI methods as part of wider socio-technical systems.
 
-The key shift is in perspective:
+The key shift is in perspective since a data science model or AI tool is one component within a larger socio-technical system.
+It will usually depend on external data, be used by people within an existing workflow and produce outputs that influence human behaviour, decisions or other systems.
 
-> A data science model or AI tool is not the whole system. It is one component within a larger socio-technical system.
-
-An AI product will usually depend on external data, be used by people within an existing workflow and produce outputs that influence human behaviour, decisions or other systems.
-
-A narrow technical view might ask:
-
-> Is the model accurate?
-
-A systems view asks:
-
-> Does the intervention improve the outcome we actually care about?
+A narrow technical view might ask how the model is performing, whereas a systems view asks whether the intervention improves the outcome we actually care about.
 
 For example:
 
@@ -171,13 +157,12 @@ For example:
 | Is the interface usable?   | How does the tool change workflow and behaviour?     |
 | Does the model work today? | How does the wider system learn and adapt over time? |
 
-Applying systems thinking helps avoid:
+Applying systems thinking can help avoid:
 
 * optimising the wrong metric
 * building technically excellent tools that nobody uses
 * ignoring human and organisational factors
 * shifting risk or workload elsewhere in the system
-* creating solutions that fail in real operational settings
 
 The value of a project does not come from the model alone. It emerges from the interaction between information, technology, organisational context, human understanding and the decisions or outcomes that follow.
 
@@ -185,43 +170,15 @@ The value of a project does not come from the model alone. It emerges from the i
 
 A systems-thinking approach changes the questions we ask.
 
-### Data
+| Area                        | Questions to consider                                                                                                                                                                                       |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Data**                    | Where does the data come from, and why was it generated?<br>What biases, gaps or assumptions might be present?<br>Who owns and maintains the data?<br>How quickly does it become out of date?               |
+| **Users**                   | Who uses or acts on the outputs?<br>What actions or decisions are they trying to make?<br>What level of explanation do they need?<br>How might their behaviour change once the tool is available?           |
+| **Workflow**                | Where does the tool fit into existing workflows?<br>What happens if the tool is ignored, misused or relied upon too heavily?<br>What teams, systems or processes are affected?                              |
+| **Feedback**                | How can users provide feedback?<br>How will errors, edge cases and unexpected uses be detected?<br>How will the system be updated over time?                                                                |
+| **Outcomes**                | What outcomes should improve, and how will we know?<br>Are we measuring model performance, user experience or organisational effect?<br>Over what period should benefits and harms be assessed?             |
+| **Unintended consequences** | Could the tool create incentives for unhelpful behaviour?<br>Could it move work, risk or responsibility onto another part of the organisation?<br>What might happen if people over-trust or under-trust it? |
 
-* Where does the data come from, and why was it generated?
-* What biases, gaps or assumptions might be present?
-* Who owns and maintains the data?
-* How quickly does it become out of date?
-
-### Users
-
-* Who uses or acts on the outputs?
-* What actions or decisions are they trying to make?
-* What level of explanation do they need?
-* How might their behaviour change once the tool is available?
-
-### Workflow
-
-* Where does the tool fit into existing workflows?
-* What happens if the tool is ignored, misused or relied upon too heavily?
-* What teams, systems or processes are affected?
-
-### Feedback
-
-* How can users provide feedback?
-* How will errors, edge cases and unexpected uses be detected?
-* How will the system be updated over time?
-
-### Outcomes
-
-* What outcomes should improve, and how will we know?
-* Are we measuring model performance, user experience or organisational effect?
-* Over what period should benefits and harms be assessed?
-
-### Unintended consequences
-
-* Could the tool create incentives for unhelpful behaviour?
-* Could it move work, risk or responsibility onto another part of the organisation?
-* What might happen if people over-trust or under-trust it?
 
 ## Case study: applying Systems Data Science to an internal AI chatbot
 
@@ -237,9 +194,7 @@ A systems-thinking framing is broader:
 
 > Help staff find, understand and apply organisational knowledge so they can make better decisions and complete tasks more effectively.
 
-The second framing changes the project considerably.
-
-The chatbot is no longer the whole intervention. It becomes one component within a wider organisational knowledge system.
+The second framing changes the project considerably. The chatbot is no longer the whole intervention but becomes one component within a wider organisational knowledge system.
 
 ### Technical versus systems perspective
 
@@ -276,61 +231,28 @@ This can form a desirable reinforcing feedback loop:
 
 > Better answers → greater trust → more use → more feedback → system improvement → better answers
 
-However, a different reinforcing dynamic can develop if early performance is poor or misaligned with user needs.
-
-Outputs that are irrelevant, unhelpful, poorly structured or insufficiently tailored to the use case may reduce trust. Reduced trust may lead to lower usage, which in turn reduces opportunities to collect feedback and understand real user needs. The system may then improve more slowly, reinforcing the original lack of trust.
+However, a different reinforcing dynamic can develop if early performance is poor or misaligned with user needs. For example if outputs are unhelpful, poorly structured or insufficiently tailored initial trust can be reduced, leading to lower usage, which in turn reduces opportunities to collect feedback and understand real user needs. The system may then improve more slowly, reinforcing the original lack of trust.
 
 This can damage adoption even where the underlying technical components are capable, but the overall system has not been sufficiently adapted to its users and operational context.
-
-The feedback mechanism is illustrated here:
-
-![Data science feedback loop](2026-07-08_data_science_feedback_loop.svg)
 
 ### Looking across the user journey
 
 Many RAG chatbot projects focus on retrieval and answer quality. Systems thinking asks questions across the whole interaction.
 
-#### Before the chatbot
+| Stage                              | Questions to consider                                                                                                                                                       |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Before the chatbot**             | Is the information accurate and current?<br>Is it duplicated or contradictory?<br>Who owns it and how is it maintained?                                                     |
+| **During the chatbot interaction** | Can users formulate effective questions?<br>Will they understand and appropriately trust the answer?<br>Can they access and verify the source material?                     |
+| **After the chatbot interaction**  | Did the user complete their task?<br>Did they still need to contact HR or another support team?<br>Did the interaction reveal gaps or problems in organisational knowledge? |
 
-* Is the information accurate and current?
-* Is it duplicated or contradictory?
-* Who owns it and how is it maintained?
-
-#### During the chatbot interaction
-
-* Can users formulate effective questions?
-* Will they understand and appropriately trust the answer?
-* Can they access and verify the source material?
-
-#### After the chatbot interaction
-
-* Did the user complete their task?
-* Did they still need to contact HR or another support team?
-* Did the interaction reveal gaps or problems in organisational knowledge?
 
 ### Emergent behaviour
 
 Emergent behaviour arises from interactions across the system rather than from any single component.
 
-Some emergent effects may be useful.
-
-For example:
-
-* staff become more self-sufficient
-* repetitive HR enquiries reduce
-* new staff find information more quickly
-* knowledge becomes easier to share across the organisation
-
-Other effects may be harmful or unintended:
-
-* staff stop reading source documents
-* users over-trust answers
-* users under-trust the tool because of early failures
-* content owners assume the chatbot compensates for poor intranet content
-* informal organisational knowledge becomes less visible
+Some emergent effects may be useful such as repetitive HR enquiries reduce as staff become more self-sufficient. Other effects may be harmful or unintended for example  users over-trust answers or informal organisational knowledge becomes less visible.
 
 Some of these effects may only become apparent after significant time has passed.
-
 For this reason, evaluation should consider not only technical performance, but also how the system influences user behaviour, organisational processes and outcomes over time.
 
 ### Looking upstream for causes
@@ -341,17 +263,9 @@ A systems perspective encourages us to trace the problem upstream. The same visi
 
 | User complaint              | Possible root cause                                               |
 | --------------------------- | ----------------------------------------------------------------- |
-| Missing information         | Poor retrieval                                                    |
-| Missing information         | Incorrect chunking                                                |
-| Missing information         | Information absent from the intranet                              |
-| Missing information         | Content out of date                                               |
+| Missing information         | Poor retrieval, Incorrect chunking, Information absent from the intranet, Content out of date  |
 | Incomplete answer           | Relevant content retrieved but not used effectively in the answer |
-| Vague answer                | Ambiguous user question                                           |
-| Vague answer                | Poorly written or insufficient source content                     |
-| Vague answer                | Prompt does not encourage a sufficiently specific response        |
-| Wrong answer                | Hallucination or use of unsupported model knowledge               |
-| Wrong answer                | Irrelevant or misleading content retrieved                        |
-| Wrong answer                | Ambiguous or contradictory policy                                 |
+| Vague answer                | Ambiguous user question, Ambiguously written or insufficient source content, Irrelevant content retrieved  |
 | Cannot verify the answer    | Source material or links are not clearly exposed                  |
 | Difficult to use the answer | Interface or presentation does not support the user's task        |
 
@@ -359,69 +273,20 @@ The important point is that the same visible failure can have several different 
 
 Improving the model will not solve a content governance problem. Improving retrieval will not solve an ambiguous policy. Rewriting the interface will not help where the necessary information does not exist.
 
-### Finding useful intervention points
-
-A key systems-thinking question is:
-
-> Where can a relatively small intervention create a large improvement?
-
-Many teams instinctively look first to the model, whereas the highest-value intervention may sit elsewhere in the system.
-
-| Intervention        | Why it might matter                                                                                          |
-| ------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Content quality     | Improving the underlying intranet content may have more impact than a small improvement in model performance |
-| Source visibility   | Clear links to source material can help users verify answers and calibrate trust                             |
-| Query refinement    | Suggested follow-up questions can help users reach the information they actually need                        |
-| Content ownership   | Clear ownership can reduce stale and contradictory information                                               |
-| Feedback mechanisms | Structured feedback can identify recurring failure modes and priorities for improvement                      |
-| Monitoring          | Looking at patterns of failure can reveal wider content, process or policy problems                          |
-
-This is one of the main benefits of taking a systems view. It encourages us to improve the part of the system that is actually limiting performance.
-
 ### Evaluating and operating the system
 
 #### Measuring performance at multiple levels
 
-Systems Data Science requires evaluation at more than one level. A model can meet its technical performance targets while the overall intervention fails to improve user outcomes or organisational performance.
+Systems Data Science requires evaluation at more than one level. A model can meet its technical performance targets while the overall intervention fails to improve user outcomes or organisational performance. The choice of measures depends on what the organisation is actually trying to improve.
 
-A model-centric evaluation might measure:
+Here are some some metrics at different levels:
 
-##### Technical measures
-
-* retrieval precision
-* retrieval recall
-* groundedness
-* answer accuracy
-* response time
-
-These remain important, but they are only part of the picture.
-
-##### User measures
-
-* task completion
-* time to find information
-* user understanding
-* satisfaction
-* appropriately calibrated trust
-
-The goal should not simply be to maximise trust. Users should trust reliable, well-supported answers and remain cautious where the system is uncertain or evidence is weak.
-
-##### Operational measures
-
-* demand on HR or support teams
-* repeated enquiries
-* time spent finding information
-* onboarding time
-
-##### Organisational measures
-
-* policy compliance
-* knowledge sharing
-* quality of organisational content
-* reduced organisational friction
-* productivity or time saved
-
-The choice of measures depends on what the organisation is actually trying to improve.
+| Measure type       | Measures                                                                                                                                     |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Technical**      | Retrieval precision, Retrieval recall, Groundedness, Answer accuracy, Response time                                                  |
+| **User**           | Task completion, Time to find information, User understanding, Satisfaction, Appropriately calibrated trust                          |
+| **Operational**    | Demand on HR or support teams, Repeated enquiries, Time spent finding information, Onboarding time                                     |
+| **Organisational** | Policy compliance, Knowledge sharing, Quality of organisational content, Reduced organisational friction, Productivity or time saved |
 
 #### Operational reliability
 
