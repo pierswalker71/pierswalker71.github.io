@@ -180,6 +180,7 @@ A systems-thinking approach changes the questions we ask.
 | **Unintended consequences** | Could the tool create incentives for unhelpful behaviour?<br>Could it move work, risk or responsibility onto another part of the organisation?<br>What might happen if people over-trust or under-trust it? |
 
 ## Case study: applying Systems Data Science to an internal AI chatbot
+
 <details>
   
   <summary>Expand to view case study of applying Systems Data Science to an internal AI chatbot</summary>
