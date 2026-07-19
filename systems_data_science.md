@@ -182,136 +182,275 @@ A systems-thinking approach changes the questions we ask.
 ## Case study: applying Systems Data Science to an internal AI chatbot
 
 <details>
-  
   <summary>Expand to view case study of applying Systems Data Science to an internal AI chatbot</summary>
 
+  <h3>Introduction</h3>
 
+  <p>
+    Consider an internal chatbot that uses Retrieval Augmented Generation (RAG) to help staff find and understand HR policies and guidance from an organisation's intranet.
+  </p>
 
+  <p>
+    This provides a useful example of Systems Data Science because the technical AI system is only one part of the intervention. Success also depends on content quality, user behaviour, workflow integration, trust, governance, feedback and operational support.
+  </p>
 
-### Introduction
+  <p>
+    A typical technical framing of the problem might be:
+  </p>
 
-Consider an internal chatbot that uses Retrieval Augmented Generation (RAG) to help staff find and understand HR policies and guidance from an organisation's intranet.
+  <blockquote>
+    Generate accurate answers to user queries using a set of documents.
+  </blockquote>
 
-This provides a useful example of Systems Data Science because the technical AI system is only one part of the intervention. Success also depends on content quality, user behaviour, workflow integration, trust, governance, feedback and operational support.
+  <p>
+    A systems-thinking framing is broader:
+  </p>
 
-A typical technical framing of the problem might be:
+  <blockquote>
+    Help staff find, understand and apply organisational knowledge so they can make better decisions and complete tasks more effectively.
+  </blockquote>
 
-> Generate accurate answers to user queries using a set of documents.
+  <p>
+    The second framing changes the project considerably. The chatbot is no longer the whole intervention but becomes one component within a wider organisational knowledge system.
+  </p>
 
-A systems-thinking framing is broader:
+  <h3>Technical versus systems perspective</h3>
 
-> Help staff find, understand and apply organisational knowledge so they can make better decisions and complete tasks more effectively.
+  <p>
+    An exclusively technical perspective might focus on the main components of the solution, such as embeddings, the vector database, search and retrieval, and the system prompt.
+  </p>
 
-The second framing changes the project considerably. The chatbot is no longer the whole intervention but becomes one component within a wider organisational knowledge system.
+  <p>
+    A systems-thinking perspective recognises that these technical components sit within a much larger organisational system:
+  </p>
 
-### Technical versus systems perspective
+  <p>
+    <img src="2026-07-08_data_science_diagram_systems_view.svg" alt="Systems perspective of data science process">
+  </p>
 
-An exclusively technical perspective might focus on the main components of the solution, such as embeddings, the vector database, search and retrieval, and the system prompt.
+  <p>
+    The technical pipeline is still important, but it is only one part of the system.
+  </p>
 
-A systems-thinking perspective recognises that these technical components sit within a much larger organisational system:
+  <h3>System components</h3>
 
-![Systems perspective of data science process](2026-07-08_data_science_diagram_systems_view.svg)
+  <table>
+    <thead>
+      <tr>
+        <th>POTI category</th>
+        <th>Examples</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Process</td>
+        <td>content creation, content review, publishing, search and retrieval, chatbot use, escalation to HR or line managers, feedback collection, maintenance</td>
+      </tr>
+      <tr>
+        <td>Organisation</td>
+        <td>staff users, content owners, subject matter experts, HR teams, senior sponsors</td>
+      </tr>
+      <tr>
+        <td>Technology</td>
+        <td>intranet, search service, RAG pipeline, vector database, large language model, analytics and monitoring tools</td>
+      </tr>
+      <tr>
+        <td>Information</td>
+        <td>policies, guidance, source documents, user feedback, usage data, historical decisions</td>
+      </tr>
+    </tbody>
+  </table>
 
-The technical pipeline is still important, but it is only one part of the system.
+  <p>
+    The quality of the chatbot depends on interactions across these components. A problem that becomes visible in the final answer may originate in the source information, content management process, retrieval pipeline, model behaviour, user interaction or interface design.
+  </p>
 
-### System components
+  <p>
+    Treating every poor answer as an LLM problem therefore risks improving the wrong part of the system.
+  </p>
 
-Applying the same POTI lens to the chatbot:
+  <h3>Interaction and feedback loops</h3>
 
-| POTI category | Examples                                                                                                                                             |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Process       | content creation, content review, publishing, search and retrieval, chatbot use, escalation to HR or line managers, feedback collection, maintenance |
-| Organisation  | staff users, content owners, subject matter experts, HR teams, senior sponsors                                                        |
-| Technology    | intranet, search service, RAG pipeline, vector database, large language model, analytics and monitoring tools                                        |
-| Information   | policies, guidance, source documents, user feedback, usage data, historical decisions                                                                |
+  <p>
+    Once system components have been identified, their interactions can be mapped.
+  </p>
 
-The quality of the chatbot depends on interactions across these components. A problem that becomes visible in the final answer may originate in the source information, content management process, retrieval pipeline, model behaviour, user interaction or interface design.
+  <p>
+    For example, good chatbot answers can contribute to greater user trust. Greater trust may lead to more use of the tool. Greater use may generate more feedback and evidence about how the system performs, allowing further improvements to be made.
+  </p>
 
-Treating every poor answer as an LLM problem therefore risks improving the wrong part of the system.
+  <p>
+    This can form a desirable reinforcing feedback loop:
+  </p>
 
-### Interaction and feedback loops
+  <blockquote>
+    Better answers → greater trust → more use → more feedback → system improvement → better answers
+  </blockquote>
 
-Once system components have been identified, their interactions can be mapped.
+  <p>
+    However, a different reinforcing dynamic can develop if early performance is poor or misaligned with user needs. For example if outputs are unhelpful, poorly structured or insufficiently tailored initial trust can be reduced, leading to lower usage, which in turn reduces opportunities to collect feedback and understand real user needs. The system may then improve more slowly, reinforcing the original lack of trust.
+  </p>
 
-For example, good chatbot answers can contribute to greater user trust. Greater trust may lead to more use of the tool. Greater use may generate more feedback and evidence about how the system performs, allowing further improvements to be made.
+  <p>
+    This can damage adoption even where the underlying technical components are capable, but the overall system has not been sufficiently adapted to its users and operational context.
+  </p>
 
-This can form a desirable reinforcing feedback loop:
+  <h3>Looking across the user journey</h3>
 
-> Better answers → greater trust → more use → more feedback → system improvement → better answers
+  <p>
+    Many RAG chatbot projects focus on retrieval and answer quality. Systems thinking asks questions across the whole interaction.
+  </p>
 
-However, a different reinforcing dynamic can develop if early performance is poor or misaligned with user needs. For example if outputs are unhelpful, poorly structured or insufficiently tailored initial trust can be reduced, leading to lower usage, which in turn reduces opportunities to collect feedback and understand real user needs. The system may then improve more slowly, reinforcing the original lack of trust.
+  <table>
+    <thead>
+      <tr>
+        <th>Stage</th>
+        <th>Questions to consider</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Before the chatbot</strong></td>
+        <td>Is the information accurate and current?<br>Is it duplicated or contradictory?<br>Who owns it and how is it maintained?</td>
+      </tr>
+      <tr>
+        <td><strong>During the chatbot interaction</strong></td>
+        <td>Can users formulate effective questions?<br>Will they understand and appropriately trust the answer?<br>Can they access and verify the source material?</td>
+      </tr>
+      <tr>
+        <td><strong>After the chatbot interaction</strong></td>
+        <td>Did the user complete their task?<br>Did they still need to contact HR or another support team?<br>Did the interaction reveal gaps or problems in organisational knowledge?</td>
+      </tr>
+    </tbody>
+  </table>
 
-This can damage adoption even where the underlying technical components are capable, but the overall system has not been sufficiently adapted to its users and operational context.
+  <h3>Emergent behaviour</h3>
 
-### Looking across the user journey
+  <p>
+    Emergent behaviour arises from interactions across the system rather than from any single component.
+  </p>
 
-Many RAG chatbot projects focus on retrieval and answer quality. Systems thinking asks questions across the whole interaction.
+  <p>
+    Some emergent effects may be useful such as repetitive HR enquiries reduce as staff become more self-sufficient. Other effects may be harmful or unintended for example users over-trust answers or informal organisational knowledge becomes less visible.
+  </p>
 
-| Stage                              | Questions to consider                                                                                                                                                       |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Before the chatbot**             | Is the information accurate and current?<br>Is it duplicated or contradictory?<br>Who owns it and how is it maintained?                                                     |
-| **During the chatbot interaction** | Can users formulate effective questions?<br>Will they understand and appropriately trust the answer?<br>Can they access and verify the source material?                     |
-| **After the chatbot interaction**  | Did the user complete their task?<br>Did they still need to contact HR or another support team?<br>Did the interaction reveal gaps or problems in organisational knowledge? |
+  <p>
+    Some of these effects may only become apparent after significant time has passed. For this reason, evaluation should consider not only technical performance, but also how the system influences user behaviour, organisational processes and outcomes over time.
+  </p>
 
+  <h3>Looking upstream for causes</h3>
 
-### Emergent behaviour
+  <p>
+    When a user reports a poor answer, it can be tempting to treat the problem as a failure simply of the AI model.
+  </p>
 
-Emergent behaviour arises from interactions across the system rather than from any single component.
+  <p>
+    A systems perspective encourages us to trace the problem upstream. The same visible symptom can have several possible causes in different parts of the system.
+  </p>
 
-Some emergent effects may be useful such as repetitive HR enquiries reduce as staff become more self-sufficient. Other effects may be harmful or unintended for example  users over-trust answers or informal organisational knowledge becomes less visible.
+  <table>
+    <thead>
+      <tr>
+        <th>User complaint</th>
+        <th>Possible root cause</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Missing information</td>
+        <td>Poor retrieval, incorrect chunking, information absent from the intranet, content out of date</td>
+      </tr>
+      <tr>
+        <td>Incomplete answer</td>
+        <td>Relevant content retrieved but not used effectively in the answer</td>
+      </tr>
+      <tr>
+        <td>Vague answer</td>
+        <td>Ambiguous user question, ambiguously written or insufficient source content, irrelevant content retrieved</td>
+      </tr>
+      <tr>
+        <td>Cannot verify the answer</td>
+        <td>Source material or links are not clearly exposed</td>
+      </tr>
+      <tr>
+        <td>Difficult to use the answer</td>
+        <td>Interface or presentation does not support the user's task</td>
+      </tr>
+    </tbody>
+  </table>
 
-Some of these effects may only become apparent after significant time has passed.
-For this reason, evaluation should consider not only technical performance, but also how the system influences user behaviour, organisational processes and outcomes over time.
+  <p>
+    The important point is that the same visible failure can have several different causes.
+  </p>
 
-### Looking upstream for causes
+  <p>
+    Improving the model will not solve a content governance problem. Improving retrieval will not solve an ambiguous policy. Rewriting the interface will not help where the necessary information does not exist.
+  </p>
 
-When a user reports a poor answer, it can be tempting to treat the problem as a failure simply of the AI model.
+  <h3>Evaluating and operating the system</h3>
 
-A systems perspective encourages us to trace the problem upstream. The same visible symptom can have several possible causes in different parts of the system.
+  <h4>Measuring performance at multiple levels</h4>
 
-| User complaint              | Possible root cause                                               |
-| --------------------------- | ----------------------------------------------------------------- |
-| Missing information         | Poor retrieval, Incorrect chunking, Information absent from the intranet, Content out of date  |
-| Incomplete answer           | Relevant content retrieved but not used effectively in the answer |
-| Vague answer                | Ambiguous user question, Ambiguously written or insufficient source content, Irrelevant content retrieved  |
-| Cannot verify the answer    | Source material or links are not clearly exposed                  |
-| Difficult to use the answer | Interface or presentation does not support the user's task        |
+  <p>
+    Systems Data Science requires evaluation at more than one level. A model can meet its technical performance targets while the overall intervention fails to improve user outcomes or organisational performance. The choice of measures depends on what the organisation is actually trying to improve.
+  </p>
 
-The important point is that the same visible failure can have several different causes.
+  <p>
+    Here are some metrics at different levels:
+  </p>
 
-Improving the model will not solve a content governance problem. Improving retrieval will not solve an ambiguous policy. Rewriting the interface will not help where the necessary information does not exist.
+  <table>
+    <thead>
+      <tr>
+        <th>Measure type</th>
+        <th>Measures</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Technical</strong></td>
+        <td>Retrieval precision, retrieval recall, groundedness, answer accuracy, response time</td>
+      </tr>
+      <tr>
+        <td><strong>User</strong></td>
+        <td>Task completion, time to find information, user understanding, satisfaction, appropriately calibrated trust</td>
+      </tr>
+      <tr>
+        <td><strong>Operational</strong></td>
+        <td>Demand on HR or support teams, repeated enquiries, time spent finding information, onboarding time</td>
+      </tr>
+      <tr>
+        <td><strong>Organisational</strong></td>
+        <td>Policy compliance, knowledge sharing, quality of organisational content, reduced organisational friction, productivity or time saved</td>
+      </tr>
+    </tbody>
+  </table>
 
-### Evaluating and operating the system
+  <h4>Operational reliability</h4>
 
-#### Measuring performance at multiple levels
+  <p>
+    A solution that performs well in a demonstration or controlled test may still fail operationally.
+  </p>
 
-Systems Data Science requires evaluation at more than one level. A model can meet its technical performance targets while the overall intervention fails to improve user outcomes or organisational performance. The choice of measures depends on what the organisation is actually trying to improve.
+  <p>
+    A Systems Data Science approach therefore also considers questions such as:
+  </p>
 
-Here are some some metrics at different levels:
+  <ul>
+    <li>What happens when source data is missing or delayed?</li>
+    <li>How are failures detected?</li>
+    <li>How does the system behave when it is uncertain?</li>
+    <li>Who is responsible for responding to problems?</li>
+    <li>How are models, prompts, source content or business rules updated?</li>
+    <li>What happens when user behaviour or the wider organisation changes?</li>
+  </ul>
 
-| Measure type       | Measures                                                                                                                                     |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Technical**      | Retrieval precision, Retrieval recall, Groundedness, Answer accuracy, Response time                                                  |
-| **User**           | Task completion, Time to find information, User understanding, Satisfaction, Appropriately calibrated trust                          |
-| **Operational**    | Demand on HR or support teams, Repeated enquiries, Time spent finding information, Onboarding time                                     |
-| **Organisational** | Policy compliance, Knowledge sharing, Quality of organisational content, Reduced organisational friction, Productivity or time saved |
-
-#### Operational reliability
-
-A solution that performs well in a demonstration or controlled test may still fail operationally.
-
-A Systems Data Science approach therefore also considers questions such as:
-
-* What happens when source data is missing or delayed?
-* How are failures detected?
-* How does the system behave when it is uncertain?
-* Who is responsible for responding to problems?
-* How are models, prompts, source content or business rules updated?
-* What happens when user behaviour or the wider organisation changes?
-
-Operational effectiveness depends not only on average model performance, but on whether the complete system can be monitored, maintained and trusted in real use.
+  <p>
+    Operational effectiveness depends not only on average model performance, but on whether the complete system can be monitored, maintained and trusted in real use.
+  </p>
 
 </details>
+
 
 ## Responsible and safe AI
 
