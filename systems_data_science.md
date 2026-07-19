@@ -181,12 +181,13 @@ A systems-thinking approach changes the questions we ask.
 
 ## Case study: applying Systems Data Science to an internal AI chatbot
 <details>
+  
   <summary>Expand to view case study of applying Systems Data Science to an internal AI chatbot</summary>
 
 
 
 
-
+### Introduction
 
 Consider an internal chatbot that uses Retrieval Augmented Generation (RAG) to help staff find and understand HR policies and guidance from an organisation's intranet.
 
