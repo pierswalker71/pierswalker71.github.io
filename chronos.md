@@ -6,7 +6,7 @@ Organisations often need to forecast what will happen next. This could be demand
 
 Chronos is an interactive forecasting tool that trains multiple machine learning models simultaneously, tests their performance, and combines the best-performing ones into a single ensemble forecast taking advantage of the wisdom-of-crowds effect. Rather than relying on one model that may perform poorly when conditions change, Chronos draws on the collective predictions of several independent models to produce more robust and reliable forecasts than any single model in isolation. 
 <figure>
-  <img src="images/5_Forecast_results_forecast_in_context.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/5_Forecast_results_forecast_in_context.png"
        alt="Forecast chart showing historical data and future predictions with confidence bounds"
        width="600">
   <figcaption><em>Forecast chart showing historical data extended into the future, with confidence bounds showing the range of predictions across models.</em></figcaption>
@@ -67,7 +67,7 @@ The screenshots below illustrate the main stages of the tool.
 ### Data input and frequency detection
 
 <figure>
-  <img src="images/1_Intro_and_Data_input.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/1_Intro_and_Data_input.png"
        alt="Data input screen with file upload and frequency selector"
        width="600">
   <figcaption><em>The user uploads a CSV or Excel file. Chronos automatically infers the data frequency and asks the user to confirm it before proceeding.</em></figcaption>
@@ -76,7 +76,7 @@ The screenshots below illustrate the main stages of the tool.
 ### Data aggregation and quality checks
 
 <figure>
-  <img src="images/2_Data_aggregation.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/2_Data_aggregation.png"
        alt="Data aggregation step showing resampled time series chart"
        width="600">
   <figcaption><em>Data can optionally be resampled to a lower frequency. The chart updates to show the processed series, and any quality issues are flagged automatically.</em></figcaption>
@@ -85,7 +85,7 @@ The screenshots below illustrate the main stages of the tool.
 ### Forecast settings and run controls
 
 <figure>
-  <img src="images/3_Forecast_settings_and_4_Run.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/3_Forecast_settings_and_4_Run.png"
        alt="Forecast horizon settings and run button"
        width="600">
   <figcaption><em>The user specifies how many periods ahead to forecast. The corresponding forecast dates are shown automatically. Pressing Run Forecast starts the training and evaluation process.</em></figcaption>
@@ -94,28 +94,28 @@ The screenshots below illustrate the main stages of the tool.
 ### Forecast results
 
 <figure>
-  <img src="images/5_Forecast_results_forecast_in_context.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/5_Forecast_results_forecast_in_context.png"
        alt="Forecast chart showing historical data and ensemble prediction with confidence bounds"
        width="600">
   <figcaption><em>The ensemble forecast appended to the full historical series. The shaded band shows the min/max range across the individual models, reflecting forecast uncertainty.</em></figcaption>
 </figure>
 
 <figure>
-  <img src="images/5_Forecast_results_forecast_chart.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/5_Forecast_results_forecast_chart.png"
        alt="Zoomed forecast chart showing the forecast period only"
        width="600">
   <figcaption><em>The forecast period shown in isolation, with confidence bounds. Wider bands indicate greater disagreement between models.</em></figcaption>
 </figure>
 
 <figure>
-  <img src="images/5_Forecast_results_individual_model_forecasts.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/5_Forecast_results_individual_model_forecasts.png"
        alt="Individual model forecasts shown together"
        width="600">
   <figcaption><em>Each model's individual forecast before ensemble combination. This view shows how closely models agree and which are outliers.</em></figcaption>
 </figure>
 
 <figure>
-  <img src="images/5_Forecast_results_data_table.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/5_Forecast_results_data_table.png"
        alt="Forecast values table with min, max and per-model columns"
        width="600">
   <figcaption><em>Forecast values for each period, including the combined ensemble forecast and the min/max range across models.</em></figcaption>
@@ -124,21 +124,21 @@ The screenshots below illustrate the main stages of the tool.
 ### Validation results
 
 <figure>
-  <img src="images/6_Validation_results_screenshot.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/6_Validation_results_screenshot.png"
        alt="Validation chart and accuracy metrics"
        width="600">
   <figcaption><em>Validation summary showing accuracy metrics including RMSE and MAPE, calculated by testing the model against held-out historical data it was not trained on.</em></figcaption>
 </figure>
 
 <figure>
-  <img src="images/6_Validation_out-of-sample_forecast_chart.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/6_Validation_out-of-sample_forecast_chart.png"
        alt="Back-test chart comparing model forecast to known historical values"
        width="600">
   <figcaption><em>The back-test chart comparing the model's held-out forecast (red) against the true observed values (blue), showing how well the ensemble would have performed on recent history.</em></figcaption>
 </figure>
 
 <figure>
-  <img src="images/6_validation_ensemble_model_weights.png"
+  <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/6_validation_ensemble_model_weights.png"
        alt="Bar chart showing the contribution of each model to the ensemble"
        width="600">
   <figcaption><em>The ensemble weights chart shows how much each model contributes to the final combined forecast. Models that scored better during validation receive a higher weighting.</em></figcaption>
