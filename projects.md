@@ -7,6 +7,31 @@ The aim is not to present isolated code samples. It is to show how analytical an
 
 ---
 
+## Chronos Forecasting Tool
+
+<img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/6_Validation_out-of-sample_forecast_chart.png"
+     alt="Forecast chart showing historical data and ensemble predictions with confidence bounds"
+     width="320">
+
+An interactive forecasting tool that trains an ensemble of machine learning models on historical time series data and combines their predictions into a single forecast with confidence bounds.
+
+The tool guides users through a structured workflow — uploading data, checking quality, setting a forecast horizon and running the ensemble — with automated model tuning, cross-validated back-testing and interpretable results. Forecast uncertainty is communicated visually through confidence bands derived from the spread of individual model predictions.
+
+It is designed to give analysts and planners a rigorous, evidence-based forecast without requiring any knowledge of machine learning.
+
+**Domain:** Operations, planning, demand forecasting  
+**Problem type:** Time series forecasting, ensemble modelling  
+**Users:** Analysts, operational planners, service managers  
+**Methods:** Ensemble machine learning, cross-validation, automated hyperparameter optimisation  
+
+**Tags:** `Forecasting` `Time series` `Ensemble modelling` `Decision support` `Streamlit app`
+
+### 👉[**Read project case study**](https://pierswalker71.github.io/chronos)
+
+[View project repository](https://github.com/pierswalker71/chronos)
+
+---
+
 ## School Allocation Tool
 <img src="https://raw.githubusercontent.com/pierswalker71/datascience_experiments/main/schools/images/school_allocation_map.png"
      alt="Map preview of the school allocation tool"
