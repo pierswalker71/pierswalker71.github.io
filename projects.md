@@ -11,7 +11,7 @@ The aim is not to present isolated code samples. It is to show how analytical an
 
 <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/6_Validation_out-of-sample_forecast_chart.png"
      alt="Forecast chart showing historical data and ensemble predictions with confidence bounds"
-     width="320">
+     width="600">
 
 An interactive forecasting tool that trains an ensemble of machine learning models on historical time series data and combines their predictions into a single forecast with confidence bounds.
 
@@ -35,7 +35,7 @@ It is designed to give analysts and planners a rigorous, evidence-based forecast
 ## School Allocation Tool
 <img src="https://raw.githubusercontent.com/pierswalker71/datascience_experiments/main/schools/images/school_allocation_map.png"
      alt="Map preview of the school allocation tool"
-     width="320">
+     width="500">
      
 An interactive app designed to help local authorities create fair, geographically coherent and defensible school allocation groups.
 
@@ -61,7 +61,7 @@ It is designed as a decision-support aid to give officers a useful starting poin
 
 <img src="https://raw.githubusercontent.com/pierswalker71/Simulation_Optimisation/main/images/simulator_optimisation_output_scatter.JPG"
   alt="Scatter plot of simulation optimisation results showing performance and cost"
-  width="320">
+  width="600">
 
 A prototype decision-support workflow showing how simulation, machine learning and optimisation can be combined to identify low-cost ways of achieving a target operational outcome.
 
