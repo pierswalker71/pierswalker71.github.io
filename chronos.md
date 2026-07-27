@@ -111,7 +111,7 @@ The screenshots below illustrate the main stages of the tool.
   <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/5_Forecast_results_individual_model_forecasts.png"
        alt="Individual model forecasts shown together"
        width="600">
-  <figcaption><em>Each model's individual forecast before ensemble combination. This view shows how closely models agree and which are outliers.</em></figcaption>
+  <figcaption><em>Each model's individual forecast before ensemble combination. This view shows how closely models agree or not.</em></figcaption>
 </figure>
 
 <figure>
@@ -127,14 +127,14 @@ The screenshots below illustrate the main stages of the tool.
   <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/6_Validation_results_screenshot.png"
        alt="Validation chart and accuracy metrics"
        width="600">
-  <figcaption><em>Validation summary showing accuracy metrics including RMSE and MAPE, calculated by testing the model against held-out historical data it was not trained on.</em></figcaption>
+  <figcaption><em>Validation summary showing accuracy metrics including RMSE and MAPE, calculated by testing the model against held-out historical data it was not trained on. For example, that had it been asked to forecast the recent past, 75% of the true values sat within its error bounds</em></figcaption>
 </figure>
 
 <figure>
   <img src="https://raw.githubusercontent.com/pierswalker71/chronos/main/images/6_Validation_out-of-sample_forecast_chart.png"
        alt="Back-test chart comparing model forecast to known historical values"
        width="600">
-  <figcaption><em>The back-test chart comparing the model's held-out forecast (red) against the true observed values (blue), showing how well the ensemble would have performed on recent history.</em></figcaption>
+  <figcaption><em>The back-test chart comparing the model's held-out forecast (red) against the true observed values (blue), showing how well the ensemble would have performed on recent history. Here, due to the significant seasonality of the data, the traditional exponential smoothing is playing a big part in the group performance.</em></figcaption>
 </figure>
 
 <figure>
@@ -154,11 +154,11 @@ Rather than asking analysts to choose a single forecasting method or tune models
 
 **More reliable forecasts through ensemble methods**
 
-By combining multiple independent models, Chronos reduces the risk that a poorly-performing individual model distorts the forecast. The final prediction reflects the collective view across the ensemble.
+By combining multiple independent models, Chronos reduces the risk that an individual poorly-performing model distorts the forecast. The final prediction reflects the combined view across all the models in the ensemble.
 
 **Honest about uncertainty**
 
-The confidence bounds on the forecast charts are derived directly from the spread of predictions across individual models. Where models disagree, the bounds are wider — giving the user a clear visual signal of where forecast uncertainty is higher.
+The confidence bounds on the forecast charts are derived directly from the spread of predictions across individual models. Where models disagree, the bounds are wider — giving the user a clear visual indication of where forecast uncertainty is highest.
 
 **Automated model tuning**
 
@@ -166,7 +166,7 @@ Chronos uses an automated parameter search to find improved settings for each mo
 
 **Built-in validation**
 
-Before producing a forecast, Chronos tests the chosen ensemble against a portion of the historical data it was not trained on. This gives the user an honest estimate of how accurate the forecast is likely to be, not just how well the model fitted its training data.
+Before producing a forecast, Chronos tests the chosen ensemble against a portion of the historical data it was not trained on. This gives the user an transparent estimate of how accurate the forecast is likely to be, not just how well the model fitted its training data. The user can see, for example, the percentage of true historic values that fell inside the uncertainty bounds of the forecast.
 
 **Practical for repeated use**
 
@@ -176,15 +176,16 @@ Completed model runs are cached to disk. Re-running a forecast with the same dat
 
 ## The Ensemble Approach
 
-Chronos trains up to twelve different machine learning models in parallel, covering a wide range of algorithm families:
+Chronos trains up to twelve differentuser-selectable machine learning models in parallel, covering a wide range of algorithm families:
 
+- **Exponential Smoothing** — a classical statistical method suited to series with trend and seasonality
 - **K-Nearest Neighbours** — forecasts based on similarity to past patterns
 - **Ridge regression** — a simple linear model that handles correlated features
-- **Gradient boosting variants** (Hist Gradient Boost, XGBoost, LightGBM, Gradient Boost) — powerful tree-based models that capture complex non-linear relationships
-- **Random Forest and Extra Trees** — ensemble tree models that average across many decision paths
 - **Support Vector Regression** and **Kernel Ridge** — models suited to smaller datasets with complex patterns
+- **Random Forest and Extra Trees** — ensemble tree models that average across many decision paths
+- **Gradient boosting variants** (Hist Gradient Boost, XGBoost, LightGBM, Gradient Boost) — powerful tree-based models that capture complex non-linear relationships
 - **Neural network (MLP)** — a multi-layer model that can learn non-linear feature interactions
-- **Exponential Smoothing** — a classical statistical method suited to series with trend and seasonality
+
 
 Each model is trained on the same time-indexed features derived from the historical data, including lagged values, rolling averages and calendar components such as month and day of year. Chronos then tests all valid combinations of models, selects the combination that produces the lowest error on held-out data, and uses that combination to generate the final forecast.
 
@@ -194,9 +195,9 @@ Each model is trained on the same time-indexed features derived from the histori
 
 Chronos does not use a single fixed forecasting method.
 
-That is an intentional design choice. Different datasets respond better to different modelling approaches, and there is no universally best model for time series forecasting. By training an ensemble and selecting the best-performing combination through cross-validated testing, Chronos adapts its approach to the specific characteristics of each dataset.
+That is an intentional design choice. Different datasets respond better to different modelling approaches, and there is no universally best model for all time series forecasting. By training an ensemble and selecting the best-performing combination through cross-validated testing, Chronos adapts its approach to the specific characteristics of each dataset.
 
-The tool handles several common data quality challenges automatically: missing periods are filled by linear interpolation before modelling, duplicate dates are summed, and negative forecasts are removed. Users are informed of any issues detected in their data before the forecast is run.
+The tool handles several common data quality challenges automatically: missing time periods are filled by linear interpolation before modelling, duplicate dates are summed, and negative forecasts are removed. Users are informed of any issues detected in their data before the forecast is run.
 
 ---
 
@@ -204,13 +205,10 @@ The tool handles several common data quality challenges automatically: missing p
 
 This project demonstrates several data science and product design skills:
 
-- designing a multi-step analytical workflow for non-technical users
 - implementing and evaluating an ensemble of machine learning models
 - automated hyperparameter optimisation using search algorithms
 - time series cross-validation and back-testing
-- translating model uncertainty into interpretable visual outputs
-- building a practical, production-ready interactive application
-- writing clear, informative user guidance throughout the interface
+- translating model uncertainty into interpretable visual output for the user
 
 The project is focused on producing a useful forecasting tool taking advantage of the wisdom-of-crowds approach. Its purpose is to show how machine learning can be packaged in a way that is accessible and applicable to real planning problems.
 
@@ -218,7 +216,7 @@ The project is focused on producing a useful forecasting tool taking advantage o
 
 ## Limitations
 
-Machine learning models are only able to extrapolate from historical patterns. They cannot anticipate events with no precedent in the data or significant step-changes. Forecast accuracy will decline the further ahead the prediction extends.
+Chronos is a prototype forecasting tool. Machine learning models are only able to extrapolate from historical patterns. They cannot anticipate events with no precedent in the data or significant step-changes. Forecast accuracy will decline the further ahead the prediction extends.
 
 The confidence bounds reflect disagreement between models, providing a useful indication about forecast uncertainty, rather than a formal statistical confidence interval.
 
@@ -230,9 +228,9 @@ All forecasts should be reviewed alongside domain knowledge and professional jud
 
 Potential enhancements to the tool include:
 
-- adding more classical time series methods such as ARIMA or Prophet as ensemble members
+- adding other machine learning models such as Prophet
 - supporting multivariate forecasting, where additional explanatory variables can improve predictions
-- allowing users to flag known future events such as promotions or holidays as forecast inputs
+- allowing users to input known future events
 - adding scenario comparison, allowing two or more forecasts to be viewed side by side
 - generating a summary report from the completed forecast run
 - providing more detailed guidance on which models tend to perform well on different data types
@@ -244,7 +242,7 @@ Potential enhancements to the tool include:
 
 This project is a useful example of applied data science because it addresses a common and practical forecasting challenge.
 
-It shows that machine learning can be made accessible to non-technical users without sacrificing rigour. The ensemble approach, automated validation and confidence bounds all contribute to a forecast that is more trustworthy than a naive single-model prediction, while the interface keeps the complexity hidden from the user.
+It shows that machine learning can be made accessible to non-technical users. The ensemble approach, automated validation and confidence bounds all contribute to a forecast that is more trustworthy than the prediction from a single model.
 
 The strongest feature of this project is its end-to-end completeness. From raw data upload through to a validated ensemble forecast with interpretable confidence bounds, the tool handles the full analytical workflow in a single application.
 
@@ -263,7 +261,7 @@ Chronos.py
 
 ## Summary
 
-Chronos turns a CSV or Excel file of historical data into a validated ensemble forecast in a few clicks. By training multiple machine learning models in parallel, automatically selecting the best-performing combination and presenting confidence bounds alongside the central prediction, it produces forecasts that are more reliable and more open about uncertainty than a single-model approach. The tool is designed for analysts and planners who need a credible, evidence-based forecast without needing to understand the underlying machine learning methods.
+Chronos turns a CSV or Excel file of historical data into a validated ensemble forecast in a few clicks. By training multiple machine learning models in parallel, automatically selecting the best-performing combination and presenting confidence bounds alongside the central prediction, it produces forecasts that are more reliable and more transparent about uncertainty than a single-model approach. The tool is designed for analysts and planners who need a evidence-based forecast without needing to understand the underlying machine learning methods.
 
 ---
 
