@@ -23,7 +23,7 @@ One practical way to think about Systems Data Science is as a continuous process
 
 **Integrate with real workflows** – consider how the solution will operate within existing technology, organisational processes and decision-making. A technically successful model may still fail if it introduces friction or does not fit the way people actually work.
 
-**Evaluate at multiple levels** – measure more than model performance. Consider technical quality, user understanding and task completion, operational effects and wider organisational outcomes.
+**Evaluate at multiple levels** – measure more than an AI model performance. Consider technical quality, user understanding and task completion, operational effects and wider organisational outcomes.
 
 **Learn and improve over time** – use monitoring, feedback, failure analysis and changing user needs to improve both the technical components and the wider system in which they operate.
 
@@ -84,7 +84,7 @@ One simple way of avoiding an overly technology-focused view is to examine the s
 | POTI category | Examples in a hospital system |
 | --- | --- |
 | **Process** | admission, triage, diagnosis, treatment, discharge, follow-up care |
-| **Organisation** | patients, nurses, doctors, administrators, managers, carers and clinical teams |
+| **Organisation** | relationships and interaction of patients, nurses, doctors, administrators and clinical teams |
 | **Technology** | patient record systems, diagnostic equipment, monitoring devices and scheduling systems |
 | **Information** | patient records, test results, referrals, clinical guidance, bed status and discharge plans |
 
@@ -209,25 +209,29 @@ A model can meet its technical targets while the overall intervention fails to i
 
 Operational effectiveness also depends on whether the system can be maintained and governed in real use. This includes understanding what happens when data is missing, how failures are detected, how uncertainty is handled, who responds to problems and how models, prompts or source content are updated.
 
+_End of Case study: applying Systems Data Science to an internal AI chatbot_
+
 </details>
 
 ## Responsible and safe AI
 
+We must build responsible and safe AI systems.
+
 A systems-thinking approach considers responsible AI across the whole system rather than treating it as a final technical check.
 
-Risks can arise from data, model behaviour, system design, interfaces, workflows and organisational processes. In systems using large language models, additional risks can include unsupported claims, sensitivity to phrasing, inconsistent outputs and attempts to manipulate the system.
+Risks can arise from data, model behaviour, system design, interfaces, workflows and organisational processes. In systems which are using large language models, additional risks can include unsupported claims, sensitivity to phrasing, inconsistent outputs and attempts to manipulate the system.
 
 ### Fairness and bias
 
 Bias can enter through data, model behaviour, design choices and the way outputs are used.
 
-Useful approaches include:
+Useful approaches to measure fairness and bias include:
 
-* **paired or counterfactual testing** – varying characteristics while keeping other parts of the input equivalent
-* **performance comparisons** – checking whether accuracy, completeness, relevance or error rates differ across groups or scenarios
-* **coverage testing** – identifying poorly represented groups, topics or situations
-* **consistency testing** – checking whether similar inputs receive appropriately similar outputs
 * **language robustness testing** – examining whether spelling or different ways of expressing the same request materially affect performance
+* * **paired or counterfactual testing** – varying any specified human characteristics while keeping other parts of the input equivalent
+* **performance comparisons** – checking whether accuracy, completeness, relevance or error rates differ across groups of people or scenarios
+* **coverage testing** – identifying poorly represented groups of people, topics or situations
+* **consistency testing** – checking whether similar inputs receive appropriately similar outputs
 
 ### Safety and trustworthiness
 
