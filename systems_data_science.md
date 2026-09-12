@@ -73,7 +73,7 @@ This means asking not only whether the model works, but whether the wider interv
 
 Systems thinking does not replace technical excellence in data science; it gives it somewhere useful to land.
 
-For a more detailed discussion of systems thinking, systems engineering, practical examples, evaluation and responsible AI, see [Systems Data Science in detail](https://pierswalker71.github.io/systems_data_science).
+For a more detailed discussion of systems thinking, systems engineering, practical examples, evaluation and responsible AI, see [Systems Data Science in detail](https://pierswalker71.github.io/systems_data_science_in_detail).
 
 ---
 **←[Back to home page](https://pierswalker71.github.io)**
