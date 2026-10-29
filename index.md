@@ -25,7 +25,7 @@ It treats analytics and AI as components within wider systems of people, process
 **Applied AI and workflow tools**  
 AI-enabled tools developed or trialled to support users within real workflows, with attention to usability, performance testing, governance and practical adoption.
 
-**AI assurance**
+**AI assurance**  
 Research and consultancy on responsible AI systems, including ethics, bias and data privacy.
 
 **Systems engineering and technical assurance**  
