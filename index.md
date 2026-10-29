@@ -2,7 +2,7 @@
 
 ## Systems-oriented AI and analytics
 
-This site presents work at the intersection of systems engineering, analytics and applied AI, with a focus on building usable solutions that perform well in real operational contexts.
+This site presents work at the intersection of systems engineering, analytics and applied AI, with a focus on building responsible, usable solutions that perform well in real operational contexts.
 
 The emphasis is not on isolated tools or coding exercises. It is on analytical and AI-enabled systems shaped by requirements, workflows, users, constraints and deployment context.
 
@@ -25,14 +25,17 @@ It treats analytics and AI as components within wider systems of people, process
 **Applied AI and workflow tools**  
 AI-enabled tools developed or trialled to support users within real workflows, with attention to usability, performance testing, governance and practical adoption.
 
-**Operational analysis**  
-Analytical methods applied to planning, prioritisation, forecasting, performance improvement and other practical operational problems.
-
-**Simulation and optimisation**  
-Models used to understand system behaviour, evaluate options, test assumptions and improve performance under constraints.
+**AI assurance**
+Research and consultancy on responsible AI systems, including ethics, bias and data privacy.
 
 **Systems engineering and technical assurance**  
 Work grounded in requirements, system context, risk, interoperability, safety and technical credibility across complex environments.
+
+**Operational analysis**  
+Analytical methods applied to balance of investment, planning, prioritisation, forecasting, performance improvement and other practical operational problems.
+
+**Simulation and optimisation**  
+Models used to understand system behaviour, evaluate options, test assumptions and improve performance under constraints.
 
 ---
 
@@ -64,7 +67,7 @@ These are intended to show how I think about systems, analytics, AI-enabled tool
 
 ## Archive and Exploratory Work
 
-Repositories and materials which reflect earlier exploratory work and technical experimentation. 
+Repositories and materials whih reflect earlier exploratory work and technical experimentation. 
 
 They are retained as historical context, illustrating how technical interests and methods have evolved over time, particularly in areas such as machine learning.
 
