@@ -4,7 +4,7 @@
 
 This site presents work at the intersection of systems engineering, analytics and applied AI, with a focus on building responsible, usable solutions that perform well in real operational contexts.
 
-The emphasis is not on isolated tools or coding exercises. It is on analytical and AI-enabled systems shaped by requirements, workflows, users, constraints and deployment context.
+The emphasis is on analytical and AI-enabled systems shaped by requirements, workflows, users, constraints and deployment context.
 
 ---
 
@@ -55,3 +55,4 @@ Projects are presented with an emphasis on:
 ### 👉 **[View selected projects](https://pierswalker71.github.io/projects)**
 
 ---
+[Back to my github](https://github.com/pierswalker71)
