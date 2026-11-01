@@ -55,20 +55,3 @@ Projects are presented with an emphasis on:
 ### 👉 **[View selected projects](https://pierswalker71.github.io/projects)**
 
 ---
-
-## Technical Notes and Ideas
-Selected technical notes, short written pieces and references to conference presentations where relevant.
-
-These are intended to show how I think about systems, analytics, AI-enabled tools, workflow integration and practical performance in real settings.
-
-[Coming soon...Read about technical notes and ideas](technical-notes.md)
-
----
-
-## Archive and Exploratory Work
-
-Repositories and materials whih reflect earlier exploratory work and technical experimentation. 
-
-They are retained as historical context, illustrating how technical interests and methods have evolved over time, particularly in areas such as machine learning.
-
-[Coming soon...Archive / exploratory work](archive.md)
